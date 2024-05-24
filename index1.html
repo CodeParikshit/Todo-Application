@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+</head>
+<body>
+	<center>
+     <h2>Login</h2>
+    <form action="TodoMyServlet2" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <p onclick="redirectToSideBar()"><input type="submit" value="Login"><br> </p>
+        <p onclick="redirectToRegistration()">Don't have account</p> 
+        </form>
+
+<!--    <small>Left click to toggle completed. <br> Right click to delete todo</small> -->
+    <script>
+        function redirectToRegistration() {
+            window.location.href = "registration.html"; 
+        }
+    </script>
+    <script>
+		function redirectToSideBar(){
+			window.location.href="sidebar.html";
+		}
+	</script>
+	
+	</center>
+	
+    <script src="script.js"></script> 
+</body>
+</html>
+
+

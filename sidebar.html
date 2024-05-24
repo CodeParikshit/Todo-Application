@@ -1,0 +1,215 @@
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Navigation</title>
+    <style>
+		     body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+		
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="home">Home</a>
+        <a href="report">Report</a>
+        <p onclick=""l><a href="profile">Profile</a></p>
+        <a href="logout">Logout</a>
+    </div>
+
+	<center>
+    <div class="content" >
+        <h1>Welcome to the todo list</h1>
+        <p onclick="redirectToDoList()">like to play game click here...</p>
+    </div>
+    </center>
+    
+       <div class="sidebar">
+        <a href="home">Home</a>
+        <a href="report">Report</a>
+       <p onclick="redirectToUpdate()"> <a href="profile" onclick="redirectToUpdate()">Profile</a></p>
+        <a href="logout">Logout</a>
+    </div>
+
+    <div class="content">
+    </div>
+
+    <div class="footer">
+        <a href="todos">Todos</a> &nbsp; &nbsp; &nbsp;
+       &nbsp;&nbsp;&nbsp; <a href="finished">Finished</a>
+    </div>
+   <script>
+		function redirectToDoList(){
+			window.location.href="todoBoxes.html";
+		}
+	</script> 
+	
+	<script>
+		function redirectToUpdate(){
+			window.location.href="UpdateProfile()";
+		}
+	</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="home">Home</a>
+        <a href="report">Report</a>
+        <a href="javascript:void(0)" onclick="redirectToUpdate()">Profile</a>
+        <a href="logout">Logout</a>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to the todo list</h1>
+        <p onclick="redirectToDoList()">Like to play game? Click here...</p>
+    </div>
+
+    <div class="footer">
+        <a href="todos">Todos</a> &nbsp; &nbsp; &nbsp;
+        <a href="finished">Finished</a>
+    </div>
+
+    <script>
+        function redirectToDoList() {
+            window.location.href = "todoBoxes.html";
+        }
+
+        function redirectToUpdate() {
+            window.location.href = "UpdateProfile.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="home">Home</a>
+        <a href="report">Report</a>
+        <a href="profile">Profile</a>
+        <a href="logout">Logout</a>
+    </div>
+    <div class="footer">
+		
+        <a href="todos" onclick="redirectToUpdate()">Todos</a> 
+        <a href="finished">Finished</a>
+       
+    </div>
+    
+    <script>
+		function goToDOBoxes(){
+			window.location.href="todoBoxes.html";
+		}
+	</script>
+<script>
+		function redirectToUpdate(){
+			window.location.href="UpdateProfile()";
+		}
+	</script>
+</body>
+</html>
+
